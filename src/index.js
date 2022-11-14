@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import "normalize.css";
+import { GlobalStyles } from './global-styles';
+import {firebaseauth} from './lib/firebase.prod';
+import { FirebaseContext } from './context/firebase';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <FirebaseContext.Provider value={{ firebaseauth }}>
+    <GlobalStyles/>
     <App />
+    </FirebaseContext.Provider>
   </React.StrictMode>
 );
 
