@@ -99,7 +99,7 @@ export function BrowseContainer({ slides }) {
             <Card.Feature category={category}>
               <Player>
                 <Player.Button />
-                <Player.Video src="/videos/bunny.mp4" />
+                <Player.Video src="https://firebasestorage.googleapis.com/v0/b/netflix-8e69c.appspot.com/o/JOKER%20-%20Final%20Trailer%20-%20Now%20Playing%20In%20Theaters.mp4?alt=media&token=81ed27be-d7cc-4b56-9379-82e35cb2b249" />
               </Player>
             </Card.Feature>
           </Card>
